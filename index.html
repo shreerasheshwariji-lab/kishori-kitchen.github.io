@@ -3,34 +3,64 @@
 <head>
   <title>Kishori Kitchen - Homestyle Happiness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #ffe7d9; /* Same original background */
+    background: #ffe7d9;
   }
+
+  /* Running Banner */
+  .banner {
+    width: 100%;
+    background: #e23744;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+
+  .banner span {
+    display: inline-block;
+    padding: 10px 0;
+    animation: scrollBanner 12s linear infinite;
+    font-size: 16px;
+  }
+
+  @keyframes scrollBanner {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+
   .container {
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin: 15px;
   }
+
   h1 {
     color: #222;
     margin-bottom: 5px;
   }
-   .subtitle {
-      font-size: 18px;
-      color: #e23744;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
+
+  .subtitle {
+    font-size: 18px;
+    color: #e23744;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
   .tagline {
     color: #555;
     margin-bottom: 20px;
   }
+
   .button {
     display: block;
     margin: 12px auto;
@@ -42,6 +72,7 @@
     font-size: 16px;
     border-radius: 6px;
   }
+
   .zomato { background: #e23744; }
   .swiggy { background: #fc8019; }
   .menu { background: #25D366; }
@@ -50,10 +81,17 @@
   .section {
     margin-top: 30px;
   }
+
   </style>
 </head>
 
 <body>
+
+  <!-- Running Offer Banner -->
+  <div class="banner">
+    <span>🔥 Special Offer: Get 15% OFF on Orders Above ₹199 – Order Now on Zomato & Swiggy 🔥</span>
+  </div>
+
   <div class="container">
     <h1>KISHORI KITCHEN</h1>
     <div class="subtitle">Homestyle Happiness</div>
@@ -80,5 +118,6 @@
       <p>🕒 Timings: 11 AM – 11 PM</p>
     </div>
   </div>
+
 </body>
 </html>
