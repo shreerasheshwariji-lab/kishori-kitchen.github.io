@@ -1,147 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vycd7tsovo");
-  </script>
-  <title>Kishori Kitchen - Homestyle Happiness</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Kishori Kitchen - Homestyle Happiness</title>
+
+  <!-- Microsoft Clarity -->
+  <script>
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "vycd7tsovo");
+  </script>
+
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #ffe7d9;
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-  /* Running Banner */
-  .banner {
-    width: 100%;
-    background: #e23744;
-    color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    font-weight: bold;
-  }
+    body {
+      background: #ffe7d9;
+      text-align: center;
+    }
 
-  .banner span {
-    display: inline-block;
-    padding: 10px 0;
-    animation: scrollBanner 20s linear infinite;
-    font-size: 16px;
-  }
+    /* 🔥 Sticky Banner */
+    .banner {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #e23744;
+      color: #fff;
+      overflow: hidden;
+      font-weight: bold;
+      z-index: 999;
+    }
 
-  @keyframes scrollBanner {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-  }
+    .banner span {
+      display: inline-block;
+      padding: 10px 0;
+      animation: scroll 15s linear infinite;
+      white-space: nowrap;
+    }
 
-  .container {
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    margin: 15px;
-  }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
 
-  h1 {
-    color: #222;
-    margin-bottom: 5px;
-  }
+    .container {
+      background: #fff;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
 
-  .subtitle {
-    font-size: 18px;
-    color: #e23744;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 5px;
+      color: #222;
+    }
 
-  .tagline {
-    color: #555;
-    margin-bottom: 20px;
-  }
+    .subtitle {
+      color: #e23744;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-  .button {
-    display: block;
-    margin: 12px auto;
-    padding: 15px;
-    width: 90%;
-    max-width: 320px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 6px;
-  }
+    .tagline {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
 
-  .zomato { background: #e23744; }
-  .swiggy { background: #fc8019; }
-  .menu { background: #25D366; }
-  .call { background: #007bff; }
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 90%;
+      max-width: 320px;
+      margin: 10px auto;
+      padding: 14px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
 
-  .section {
-    margin-top: 30px;
-  }
+    .btn:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
+    }
+
+    .zomato { background: #e23744; }
+    .swiggy { background: #fc8019; }
+    .menu { background: #25D366; }
+    .feedback { background: #ff6600; }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .items p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .review-box {
+      background: #f9f9f9;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #444;
+    }
 
   </style>
 </head>
 
 <body>
 
-  <!-- Running Offer Banner -->
-  <!--<div class="banner">
-    <span>🔥 [ZOMATO OFFER]: Flat Rs-10 Off on all the items priced at Rs-99/89/109/129 🔥</span>
-    <br>
-    <span>🔥 [SWIGGY OFFER]: 10% Off on orders above Rs-800 🔥</span>
-  </br>
-  </div>-->
+  <!-- 🔥 Running Offer Banner -->
+  <div class="banner">
+    <span>🔥 10% OFF on Orders Above ₹249 upto ₹40 | Fresh Homemade Food | Order Now 🔥</span>
+  </div>
 
   <div class="container">
+
     <h1>KISHORI KITCHEN</h1>
     <div class="subtitle">Homestyle Happiness</div>
+
     <p class="tagline">Fresh • Hygienic • Home Made Food</p>
     <p class="tagline">Prepared with ❤️</p>
 
-    <a class="button zomato" href="https://zomato.onelink.me/xqzv/vvjwucue">Order on Zomato</a>
-    <a class="button swiggy" href="https://www.swiggy.com/direct/brand/508011?source=swiggy-direct&subSource=generic">Order on Swiggy</a>
-    <a class="button menu" href="https://sites.google.com/view/kishorikitchen-menu">Kishori Kitchen Menu</a>
-    <!--<a class="button call" href="tel:9654136282">Customer Support</a>-->
+    <!-- 🔥 Order Buttons (Above Fold) -->
+    <a class="btn zomato" href="https://zomato.onelink.me/xqzv/vvjwucue">Order on Zomato</a>
+    <a class="btn swiggy" href="https://www.swiggy.com/direct/brand/508011?source=swiggy-direct&subSource=generic">Order on Swiggy</a>
+    <a class="btn menu" href="https://sites.google.com/view/kishorikitchen-menu">View Menu</a>
 
-     <!-- Feedback -->
+    <!-- ⭐ Feedback -->
     <div class="section">
-      <a href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform" target="_blank"
-      style="background-color:#ff6600; color:white; padding:12px 20px; text-decoration:none; border-radius:8px; font-weight:bold;">
-      ⭐ Share your experience
+      <a class="btn feedback" href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform" target="_blank">
+        ⭐ Share Your Experience
       </a>
     </div>
 
-    <!-- Popular Items -->
+    <!-- 🍛 Popular Items -->
     <div class="section">
       <h3>🔥 Popular Items</h3>
-      <p>• Kishori Signature Thali</p>
-      <p>• Paneer Paratha with Dahi & Achar</p>
-      <p>• Kadhi Chawal</p>
-      <p>• Veg Fried Rice</p>
+      <div class="items">
+        <p>• Kishori Signature Thali</p>
+        <p>• Paneer Paratha with Dahi & Achar</p>
+        <p>• Kadhi Chawal</p>
+        <p>• Veg Fried Rice</p>
+      </div>
     </div>
 
-    <!-- Trust Section -->
+    <!-- ❤️ Trust -->
     <div class="review-box">
-      <p>❤️ Loved by 500+ Happy Customers</p>
-      <p>⭐ 4.0+ Ratings on Food Platforms</p>
+      ❤️ Loved by 500+ Happy Customers <br>
+      ⭐ 4.0+ Ratings on Food Platforms
     </div>
 
-
-    <div class="section">
-      <p>Thank You for Your Order 🙏</p>
+    <!-- 📍 Footer -->
+    <div class="footer">
+      <p>🙏 Thank You for Your Order</p>
       <p>📍 Serving: Ghaziabad</p>
-      <p>🕒 Timings: 11 AM – 11 PM</p>
+      <p>🕒 11 AM – 11 PM</p>
     </div>
+
   </div>
 
 </body>
