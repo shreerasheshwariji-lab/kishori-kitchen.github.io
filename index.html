@@ -1,139 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vycd7tsovo");
-  </script>
-  <title>Kishori Kitchen - Homestyle Happiness</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #ffe7d9;
-  }
-
-  /* Running Banner */
-  .banner {
-    width: 100%;
-    background: #e23744;
-    color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    font-weight: bold;
-  }
-
-  .banner span {
-    display: inline-block;
-    padding: 10px 0;
-    animation: scrollBanner 20s linear infinite;
-    font-size: 16px;
-  }
-
-  @keyframes scrollBanner {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-  }
-
-  .container {
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    margin: 15px;
-  }
-
-  h1 {
-    color: #222;
-    margin-bottom: 5px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    color: #e23744;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-
-  .tagline {
-    color: #555;
-    margin-bottom: 20px;
-  }
-
-  .button {
-    display: block;
-    margin: 12px auto;
-    padding: 15px;
-    width: 90%;
-    max-width: 320px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 6px;
-  }
-
-  .zomato { background: #e23744; }
-  .swiggy { background: #fc8019; }
-  .menu { background: #25D366; }
-  .call { background: #007bff; }
-
-  .section {
-    margin-top: 30px;
-  }
-
-  </style>
-</head>
-
-<body>
-
-  <!-- Running Offer Banner -->
-  <!--<div class="banner">
-    <span>🔥 [ZOMATO OFFER]: Flat Rs-10 Off on all the items priced at Rs-99/89/109/129 🔥</span>
-    <br>
-    <span>🔥 [SWIGGY OFFER]: 10% Off on orders above Rs-800 🔥</span>
-  </br>
-  </div>-->
-
-  <div class="container">
-    <h1>KISHORI KITCHEN</h1>
-    <div class="subtitle">Homestyle Happiness</div>
-    <p class="tagline">Fresh • Hygienic • Home Made Food</p>
-    <p class="tagline">Prepared with ❤️</p>
-
+    <!-- CTA Buttons -->
     <a class="button zomato" href="https://zomato.onelink.me/xqzv/vvjwucue">Order on Zomato</a>
-    <a class="button swiggy" href="https://www.swiggy.com/direct/brand/508011?source=swiggy-direct&subSource=generic">Order on Swiggy</a>
-     <a class="button menu" href="https://sites.google.com/view/kishorikitchen-menu">Kishori Kitchen Menu</a>
-    <!--<a class="button call" href="tel:9654136282">Customer Support</a>-->
-    <br>
-    <a href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/edit?chromeless=1" target="_blank" 
-style="background-color:#ff6600; color:white; padding:12px 20px; text-decoration:none; border-radius:8px; font-weight:bold;">
-Share your experience.
-    </a>
-  </br>
+    <a class="button swiggy" href="https://www.swiggy.com/direct/brand/508011">Order on Swiggy</a>
+    <a class="button menu" href="https://sites.google.com/view/kishorikitchen-menu">View Menu</a>
 
+    <!-- WhatsApp Direct Order -->
+    <a class="button whatsapp" href="https://wa.me/919654136282">Order on WhatsApp</a>
+
+    <!-- Countdown urgency -->
+    <div class="countdown" id="timer"></div>
+
+    <!-- Feedback -->
     <div class="section">
-      <h3>Popular Items</h3>
+      <a href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform" target="_blank"
+      style="background-color:#ff6600; color:white; padding:12px 20px; text-decoration:none; border-radius:8px; font-weight:bold;">
+      ⭐ Share your experience
+      </a>
+    </div>
+
+    <!-- Popular Items -->
+    <div class="section">
+      <h3>🔥 Popular Items</h3>
       <p>• Kishori Signature Thali</p>
-      <p>• Kishori Classic Thali</p>
-      <p>• Paneer Paratha with dahi & achar</p>
+      <p>• Paneer Paratha with Dahi & Achar</p>
       <p>• Kadhi Chawal</p>
       <p>• Veg Fried Rice</p>
     </div>
 
+    <!-- Trust Section -->
+    <div class="review-box">
+      <p>❤️ Loved by 500+ Happy Customers</p>
+      <p>⭐ 4.5+ Ratings on Food Platforms</p>
+    </div>
+
     <div class="section">
-      <p>Thank You for Your Order 🙏</p>
       <p>📍 Serving: Ghaziabad</p>
-      <p>🕒 Timings: 11 AM – 11 PM</p>
+      <p>🕒 11 AM – 11 PM</p>
     </div>
   </div>
+
+  <!-- Sticky CTA -->
+  <a class="sticky-order" href="https://wa.me/919654136282">👉 Order Now on WhatsApp</a>
+
+  <!-- Countdown Script -->
+  <script>
+    var countDownDate = new Date().getTime() + (60 * 60 * 1000);
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML = "⏳ Offer ends in " + minutes + "m " + seconds + "s";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Offer Expired";
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
