@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="kishori_favicon_64.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title> Kishori Kitchen - Homestyle Happiness </title>
+  <title>Kishori Kitchen – Homestyle Happiness</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- Microsoft Clarity -->
-  <script>
-  (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "vycd7tsovo");
-  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 
   <style>
     * {
@@ -28,13 +17,271 @@
     }
 
     body {
-     margin: 0;
-     text-align: center;
+      background: #ffe7d9;
+      text-align: center;
+    }
 
-     background: 
-      linear-gradient(rgba(255,231,217,0.85), rgba(255,231,217,0.85)),
+    /* Banner */
+    .banner {
+      position: sticky;
+      top: 0;
+      background: #e23744;
+      color: #fff;
+      padding: 10px;
+      font-weight: 600;
+      z-index: 10;
+    }
 
-     background-size: cover;
+    /* Main Card */
+    .container {
+      background: #ffffff;
+      margin: 16px;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    #greeting {
+      font-size: 17px;
+      font-weight: 700;
+      color: #d84315;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    /* ✅ ATTRACTIVE TAGLINE COLOR */
+    .tagline {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #e65100, #ff8f00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .pure-veg {
+      color: #1b8f37;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .trust {
+      background: #f8f8f8;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .offer {
+      background: #fff3e0;
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: #e65100;
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn {
+      position: relative;
+      display: block;
+      max-width: 320px;
+      margin: 14px auto;
+      padding: 15px;
+      border-radius: 14px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .whatsapp { background: #25D366; }
+    .zomato   { background: #e23744; }
+    .swiggy   { background: #fc8019; }
+    .menu     { background: #2e7d32; }
+    .feedback { background: #ff9800; }
+
+    .badge {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #ff5722;
+      color: #fff;
+      font-size: 10px;
+      padding: 4px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    /* Admin Panel */
+    .admin {
+      display: none;
+      background: #222;
+      color: #fff;
+      padding: 14px;
+      margin-top: 14px;
+      border-radius: 12px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #444;
+      padding-bottom: 90px;
+    }
+
+    /* Sticky WhatsApp */
+    .sticky-btn {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #25D366;
+      color: #fff;
+      padding: 16px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="banner">
+  🔥 ₹20 OFF on WhatsApp Orders | Free Delivery on ₹299+ 🔥
+</div>
+
+<div class="container">
+
+  <div id="greeting">Welcome 🙏</div>
+
+  <h1>🍲 KISHORI KITCHEN</h1>
+
+  <div class="tagline">
+    Homestyle Happiness – Ghar Jaisa Swad in Every Bite
+  </div>
+
+  <div class="pure-veg">
+    🟢 100% Pure Veg Kitchen
+  </div>
+
+  <div class="trust">
+    ❤️ Loved by 500+ Happy Customers<br>
+    ⭐ 4.0+ Ratings on Food Platforms
+  </div>
+
+  <div class="offer">
+    ✅ Freshly Cooked Daily<br>
+    🏠 Home Style Food<br>
+    🚫 No Preservatives
+  </div>
+
+  <!-- Buttons -->
+  <a class="btn whatsapp" data-track="whatsapp"
+     href="https://wa.me/918882140090" target="_blank">
+    💬 Order on WhatsApp
+    <span class="badge">Most Popular</span>
+  </a>
+
+  <a class="btn zomato" data-track="zomato"
+     href="https://zomato.onelink.me/xqzv/vvjwucue" target="_blank">
+    🍽️ Order on Zomato
+  </a>
+
+  <a class="btn swiggy" data-track="swiggy"
+     href="https://www.swiggy.com/direct/brand/508011" target="_blank">
+    🛵 Order on Swiggy
+  </a>
+
+  <a class="btn menu" data-track="menu"
+     href="https://sites.google.com/view/kishorikitchen-menu" target="_blank">
+    📜 View Menu
+  </a>
+
+  <a class="btn feedback" data-track="feedback"
+     href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform" target="_blank">
+    ⭐ Share Feedback
+  </a>
+
+  <div class="admin" id="adminPanel"></div>
+
+  <div class="footer">
+    🙏 Thank You for Your Order<br>
+    📍 Serving: Ghaziabad<br>
+    🕒 11 AM – 11 PM
+  </div>
+
+</div>
+
+<a class="sticky-btn" data-track="whatsapp"
+   href="https://wa.me/918882140090" target="_blank">
+  💬 Order Now on WhatsApp
+</a>
+
+<script>
+/* Greeting */
+const hour = new Date().getHours();
+document.getElementById("greeting").innerText =
+  hour < 12 ? "☀️ Good Morning!" :
+  hour < 18 ? "🌤️ Good Afternoon!" :
+              "🌙 Good Evening!";
+
+/* Tracking */
+const KEY = "kk_daily";
+const today = new Date().toDateString();
+let data = JSON.parse(localStorage.getItem(KEY));
+if (!data || data.date !== today) {
+  data = { date: today, whatsapp:0, zomato:0, swiggy:0, menu:0, feedback:0 };
+  localStorage.setItem(KEY, JSON.stringify(data));
+}
+
+document.addEventListener("click", function (e) {
+  const link = e.target.closest("a[data-track]");
+  if (!link) return;
+  data[link.dataset.track]++;
+  localStorage.setItem(KEY, JSON.stringify(data));
+});
+
+/* 5‑Click Admin Panel */
+(function () {
+  const greeting = document.getElementById("greeting");
+  const panel = document.getElementById("adminPanel");
+  let taps = 0, timer;
+
+  greeting.addEventListener("click", () => {
+    taps++;
+    clearTimeout(timer);
+    timer = setTimeout(() => taps = 0, 1500);
+
+    if (taps === 5) {
+      panel.style.display = "block";
+      panel.innerHTML = `
+        <b>📊 Today’s Summary</b><br><br>
+        WhatsApp: ${data.whatsapp}<br>
+        Zomato: ${data.zomato}<br>
+        Swiggy: ${data.swiggy}<br>
+        Menu: ${data.menu}<br>
+        Feedback: ${data.feedback}
+      `;
+      taps = 0;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>     background-size: cover;
      background-attachment: fixed;
     }
 
