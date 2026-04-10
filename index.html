@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,15 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+
+  <!-- ✅ GOOGLE ANALYTICS 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-75665FN5BS');
+  </script>
 
   <style>
     * {
@@ -21,7 +31,6 @@
       text-align: center;
     }
 
-    /* Banner */
     .banner {
       position: sticky;
       top: 0;
@@ -32,7 +41,6 @@
       z-index: 10;
     }
 
-    /* Main Card */
     .container {
       background: #ffffff;
       margin: 16px;
@@ -54,7 +62,6 @@
       margin-bottom: 4px;
     }
 
-    /* ✅ ATTRACTIVE TAGLINE COLOR */
     .tagline {
       font-size: 14px;
       font-weight: 600;
@@ -89,7 +96,6 @@
       font-weight: 500;
     }
 
-    /* Buttons */
     .btn {
       position: relative;
       display: block;
@@ -119,19 +125,6 @@
       font-size: 10px;
       padding: 4px 8px;
       border-radius: 10px;
-      white-space: nowrap;
-    }
-
-    /* Admin Panel */
-    .admin {
-      display: none;
-      background: #222;
-      color: #fff;
-      padding: 14px;
-      margin-top: 14px;
-      border-radius: 12px;
-      font-size: 14px;
-      text-align: left;
     }
 
     .footer {
@@ -141,7 +134,6 @@
       padding-bottom: 90px;
     }
 
-    /* Sticky WhatsApp */
     .sticky-btn {
       position: fixed;
       bottom: 0;
@@ -187,7 +179,6 @@
     🚫 No Preservatives
   </div>
 
-  <!-- Buttons -->
   <a class="btn whatsapp" data-track="whatsapp"
      href="https://wa.me/918882140090" target="_blank">
     💬 Order on WhatsApp
@@ -214,8 +205,6 @@
     ⭐ Share Feedback
   </a>
 
-  <div class="admin" id="adminPanel"></div>
-
   <div class="footer">
     🙏 Thank You for Your Order<br>
     📍 Serving: Ghaziabad<br>
@@ -230,54 +219,25 @@
 </a>
 
 <script>
-/* Greeting */
-const hour = new Date().getHours();
-document.getElementById("greeting").innerText =
-  hour < 12 ? "☀️ Good Morning!" :
-  hour < 18 ? "🌤️ Good Afternoon!" :
-              "🌙 Good Evening!";
+  /* Greeting */
+  const hour = new Date().getHours();
+  document.getElementById("greeting").innerText =
+    hour < 12 ? "☀️ Good Morning!" :
+    hour < 18 ? "🌤️ Good Afternoon!" :
+                "🌙 Good Evening!";
 
-/* Tracking */
-const KEY = "kk_daily";
-const today = new Date().toDateString();
-let data = JSON.parse(localStorage.getItem(KEY));
-if (!data || data.date !== today) {
-  data = { date: today, whatsapp:0, zomato:0, swiggy:0, menu:0, feedback:0 };
-  localStorage.setItem(KEY, JSON.stringify(data));
-}
+  /* ✅ REMOTE CLICK TRACKING */
+  document.addEventListener("click", function(e) {
+    const link = e.target.closest("a[data-track]");
+    if (!link) return;
 
-document.addEventListener("click", function (e) {
-  const link = e.target.closest("a[data-track]");
-  if (!link) return;
-  data[link.dataset.track]++;
-  localStorage.setItem(KEY, JSON.stringify(data));
-});
+    const action = link.dataset.track;
 
-/* 5‑Click Admin Panel */
-(function () {
-  const greeting = document.getElementById("greeting");
-  const panel = document.getElementById("adminPanel");
-  let taps = 0, timer;
-
-  greeting.addEventListener("click", () => {
-    taps++;
-    clearTimeout(timer);
-    timer = setTimeout(() => taps = 0, 1500);
-
-    if (taps === 5) {
-      panel.style.display = "block";
-      panel.innerHTML = `
-        <b>📊 Today’s Summary</b><br><br>
-        WhatsApp: ${data.whatsapp}<br>
-        Zomato: ${data.zomato}<br>
-        Swiggy: ${data.swiggy}<br>
-        Menu: ${data.menu}<br>
-        Feedback: ${data.feedback}
-      `;
-      taps = 0;
-    }
+    gtag("event", "button_click", {
+      event_category: "Kishori Kitchen",
+      event_label: link.dataset.track
+    });
   });
-})();
 </script>
 
 </body>
