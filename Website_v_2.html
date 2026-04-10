@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kishori Kitchen Cloud Kitchen - Authentic Ghar Ka Khana in Ghaziabad. Fresh, hygienic, pocket-friendly North Indian meals delivered to your doorstep.">
+  <meta name="keywords" content="cloud kitchen Ghaziabad, ghar ka khana, veg thali, paratha, homemade food, Kishori Kitchen">
+  <title>Kishori Kitchen | Premium Veg Cloud Kitchen</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #f5e6c8, #fdf6e3);
+      background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+      color: #4b2e2e;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 30px auto;
+      padding: 25px;
+      border: 10px solid #d4af37;
+      border-radius: 20px;
+      box-shadow: 0 10px 60px rgba(0,0,0,0.25);
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(6px);
+    }
+
+    .logo {
+      text-align: center;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 180px;
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 0 10px rgba(255,165,0,0.5));
+    }
+
+    .logo::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(255,200,0,0.7), transparent);
+      animation: glow 3s infinite alternate;
+      z-index: 1;
+    }
+
+    @keyframes glow {
+      from { opacity: 0.6; }
+      to { opacity: 1; }
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 35px;
+      font-size: 22px;
+      color: #8b4513;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #d4af37, transparent);
+      margin: 8px auto;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 17px;
+      position: relative;
+    }
+
+    .menu-item::after {
+      content: "....................................................";
+      position: absolute;
+      left: 0;
+      right: 0;
+      color: #aaa;
+      z-index: 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .menu-item span {
+      background: rgba(255,255,255,0.85);
+      position: relative;
+      z-index: 1;
+      padding: 0 5px;
+    }
+
+    .menu-item span:last-child {
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px solid #d4af37;
+    }
+
+    .veg {
+      color: green;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(45deg, #ff6a00, #ff3c00);
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    @media(max-width:600px) {
+      .container { padding: 15px; }
+      .menu-item { font-size: 15px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="logo.png" alt="Kishori Kitchen Logo">
+    </div>
+
+    <h2>GHAR KA KHANA</h2>
+    <div class="menu-item"><span>Rajma Chawal</span><span>169</span></div>
+    <div class="menu-item"><span>Chole Chawal</span><span>169</span></div>
+    <div class="menu-item"><span>Kadhi Chawal</span><span>169</span></div>
+    <div class="menu-item"><span>Paneer Curry + Roti[4]</span><span>199</span></div>
+
+    <h2>PARATHAS</h2>
+    <div class="menu-item"><span>Aloo Paratha with Home Made Dahi & Achar</span><span>99</span></div>
+    <div class="menu-item"><span>Triangle Masala Paratha[2]</span><span>99</span></div>
+    <div class="menu-item"><span>Aloo Pyaz Paratha</span><span>109</span></div>
+    <div class="menu-item"><span>Triangle Masala Paratha (Desi Ghee)</span><span>120</span></div>
+    <div class="menu-item"><span>Paneer Paratha</span><span>129</span></div>
+
+    <h2>POCKET FRIENDLY VEG THALI</h2>
+    <div class="menu-item"><span>Aloo Matar + Poori[5]</span><span>149</span></div>
+    <div class="menu-item"><span>Aloo Matar + Paratha[4]</span><span>149</span></div>
+    <div class="menu-item"><span>Dal + Chole + Roti + Rice + Salad</span><span>219</span></div>
+    <div class="menu-item"><span>Dal + Jeera Aloo + Roti + Rice + Salad</span><span>219</span></div>
+    <div class="menu-item"><span>Kishori Signature Thali</span><span>279</span></div>
+
+    <h2>RICE</h2>
+    <div class="menu-item"><span>Veg Fried Rice</span><span>119</span></div>
+    <div class="menu-item"><span>Chinese Fried Rice</span><span>139</span></div>
+
+    <h2>SNACKS & LIGHT BITES</h2>
+    <div class="menu-item"><span>Healthy Bite Poha</span><span>119</span></div>
+    <div class="menu-item"><span>Indo Chinese Pasta</span><span>119</span></div>
+    <div class="menu-item"><span>Chinese Potato Fries</span><span>119</span></div>
+
+    <h2>MAGGI CORNER</h2>
+    <div class="menu-item"><span>Plain Maggi</span><span>59</span></div>
+    <div class="menu-item"><span>Veg Maggi</span><span>79</span></div>
+    <div class="menu-item"><span>Indo Chinese Maggi</span><span>89</span></div>
+    <div class="menu-item"><span>Creamy Cheese Maggi</span><span>109</span></div>
+
+    <div class="footer">
+      <div class="veg">🌿 Pure Veg</div>
+      <p>Keshav Kunj, Govindpuram Ghaziabad</p>
+      <p>📞 8882140090</p>
+      <p>FSSAI Lic No. 22726699000027</p>
+      <p>Open: 11:00 – 23:00</p>
+    </div>
+
+  </div>
+
+  <a href="https://wa.me/918882140090" class="cta">Order on WhatsApp</a>
+
+</body>
+</html>
