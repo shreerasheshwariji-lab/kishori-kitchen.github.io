@@ -151,27 +151,109 @@
     }
 
     /* 🔥 Bubble Effect */
-.btn::before, .btn::after {
+    .btn::before, .btn::after {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      top: 50%;
+      left: 50%;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    .btn:active::before {
+      opacity: 1;
+      animation: bubblesTop 0.6s ease-out;
+    }
+
+    .btn:active::after {
+      opacity: 1;
+      animation: bubblesBottom 0.6s ease-out;
+    }
+    /* 🌟 WhatsApp Glow + Pulse */
+.whatsapp {
+  background: #25D366;
+  box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  animation: pulseGlow 1.8s infinite;
+}
+
+/* 💓 Bulging / Pulse Effect */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #25D366, 0 0 35px #25D366;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  }
+}
+
+/* 🫧 Bubble Effect */
+.whatsapp::before,
+.whatsapp::after {
   content: "";
   position: absolute;
   width: 120%;
   height: 120%;
   top: 50%;
   left: 50%;
-  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0;
 }
 
-.btn:active::before {
+/* Trigger bubbles on click */
+.whatsapp:active::before {
   opacity: 1;
-  animation: bubblesTop 0.6s ease-out;
+  animation: bubbleTop 0.6s ease-out;
 }
 
-.btn:active::after {
+.whatsapp:active::after {
   opacity: 1;
-  animation: bubblesBottom 0.6s ease-out;
+  animation: bubbleBottom 0.6s ease-out;
+}
+
+/* Top bubbles */
+@keyframes bubbleTop {
+  0% {
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%),
+      radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%);
+    background-position: 50% 120%, 30% 140%;
+    background-size: 12px 12px;
+  }
+  100% {
+    background-position: 50% -20%, 30% -40%;
+    opacity: 0;
+  }
+}
+
+/* Bottom bubbles */
+@keyframes bubbleBottom {
+  0% {
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%),
+      radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%);
+    background-position: 50% -20%, 70% -40%;
+    background-size: 12px 12px;
+  }
+  100% {
+    background-position: 50% 120%, 70% 140%;
+    opacity: 0;
+  }
+}
+
+/* 👇 Click Press Feel */
+.whatsapp:active {
+  transform: scale(0.95);
 }
 
 /* Top bubbles */
