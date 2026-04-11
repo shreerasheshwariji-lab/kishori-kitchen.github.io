@@ -149,6 +149,65 @@
       font-weight: 800;
       text-decoration: none;
     }
+
+    /* 🔥 Bubble Effect */
+.btn::before, .btn::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.btn:active::before {
+  opacity: 1;
+  animation: bubblesTop 0.6s ease-out;
+}
+
+.btn:active::after {
+  opacity: 1;
+  animation: bubblesBottom 0.6s ease-out;
+}
+
+/* Top bubbles */
+@keyframes bubblesTop {
+  0% {
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.6) 20%, transparent 20%),
+      radial-gradient(circle, rgba(255,255,255,0.6) 20%, transparent 20%);
+    background-position: 50% 120%, 30% 140%;
+    background-size: 10px 10px;
+  }
+  100% {
+    background-position: 50% -20%, 30% -40%;
+    opacity: 0;
+  }
+}
+
+/* Bottom bubbles */
+@keyframes bubblesBottom {
+  0% {
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.6) 20%, transparent 20%),
+      radial-gradient(circle, rgba(255,255,255,0.6) 20%, transparent 20%);
+    background-position: 50% -20%, 70% -40%;
+    background-size: 10px 10px;
+  }
+  100% {
+    background-position: 50% 120%, 70% 140%;
+    opacity: 0;
+  }
+}
+
+/* Click Press Effect */
+.btn:active {
+  transform: scale(0.96);
+}
   </style>
 </head>
 
