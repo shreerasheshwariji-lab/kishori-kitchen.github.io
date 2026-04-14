@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kishori Kitchen – Taste of Homemade</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,47 +13,95 @@
       padding: 20px;
       color: #333;
     }
+
     header {
       text-align: center;
       padding: 10px;
     }
+
     header h1 {
       font-size: 2.5em;
       color: #b22222;
     }
+
     header p {
       font-style: italic;
       color: #555;
     }
+
     section {
       margin: 20px 0;
     }
+
     h2 {
       color: #b22222;
       border-bottom: 2px solid #b22222;
       padding-bottom: 5px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       margin: 8px 0;
       display: flex;
       justify-content: space-between;
     }
+
     .price {
       font-weight: bold;
       color: #444;
     }
+
     footer {
       margin-top: 30px;
       text-align: center;
       font-size: 0.9em;
       color: #555;
     }
+
+    /* ORDER BUTTONS */
+    .order-buttons {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .order-buttons a {
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .zomato {
+      background-color: #E23744;
+    }
+
+    .swiggy {
+      background-color: #FC8019;
+    }
+
+    .order-buttons a:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -124,9 +173,24 @@
     <p><strong>Owner:</strong> Renu Dhaulan</p>
     <p><strong>Contact:</strong> <a href="tel:08882140090">08882140090</a></p>
     <p><strong>Email:</strong> <a href="mailto:shreerasheshwarji@gmail.com">shreerasheshwarji@gmail.com</a></p>
-    <p><strong>Website:</strong> <a href="https://kishorikitchen.in">kishorikitchen.in</a></p>
+    <p><strong>Website:</strong> <a href="https://kishorikitchen.in" target="_blank">kishorikitchen.in</a></p>
     <p><strong>FSSAI Lic No:</strong> 2272669900027</p>
   </footer>
+
+  <!-- ORDER BUTTONS -->
+  <div class="order-buttons">
+    <a href="https://wa.me/918882140090?text=Hello%20Kishori%20Kitchen,%20I%20would%20like%20to%20place%20an%20order." class="whatsapp" target="_blank">
+      📱 Order on WhatsApp
+    </a>
+
+    <a href="https://www.zomato.com/" class="zomato" target="_blank">
+      🍽️ Order on Zomato
+    </a>
+
+    <a href="https://www.swiggy.com/" class="swiggy" target="_blank">
+      🛵 Order on Swiggy
+    </a>
+  </div>
 
 </body>
 </html>
