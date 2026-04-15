@@ -1,36 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kishori Kitchen – Taste of Homemade</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #fff8f0;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       color: #333;
     }
 
+    /* HEADER DESIGN (MATCH IMAGE) */
     header {
       text-align: center;
-      padding: 10px;
+      padding: 20px 10px;
+      background-color: #f2f2f2;
     }
 
-    header h1 {
-      font-size: 2.5em;
-      color: #b22222;
+    .greeting {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff5a1f;
     }
 
-    header p {
-      font-style: italic;
-      color: #555;
+    .logo-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 900;
+      color: #000;
+      margin: 5px 0;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #ff6a00;
+      font-weight: 600;
+    }
+
+    .pure-veg {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
     }
 
     section {
-      margin: 20px 0;
+      margin: 20px;
     }
 
     h2 {
@@ -60,6 +82,7 @@
       text-align: center;
       font-size: 0.9em;
       color: #555;
+      padding-bottom: 80px;
     }
 
     /* ORDER BUTTONS */
@@ -104,11 +127,15 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>Kishori Kitchen</h1>
-    <p>Taste of Homemade</p>
+    <div class="greeting">🌤️ Good Afternoon!</div>
+    <div class="logo-title">🍲 KISHORI KITCHEN</div>
+    <div class="tagline">Homestyle Happiness – Ghar Jaisa Swad in Every Bite</div>
+    <div class="pure-veg">🟢 100% Pure Veg Kitchen</div>
   </header>
 
+  <!-- MENU -->
   <section>
     <h2>Ghar Ka Khana</h2>
     <ul>
@@ -169,6 +196,7 @@
     </ul>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p><strong>Owner:</strong> Renu Dhaulan</p>
     <p><strong>Contact:</strong> <a href="tel:08882140090">08882140090</a></p>
