@@ -145,6 +145,96 @@
     .order-buttons a:hover {
       opacity: 0.9;
     }
+
+    /* BULK ORDER SECTION */
+.bulk-orders {
+  margin: 30px 20px;
+  padding: 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fff4d6, #ffe6cc);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.bulk-orders h2 {
+  color: #b22222;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.bulk-tagline {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.bulk-menu {
+  margin: 18px 0;
+  padding: 12px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+.bulk-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.price-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.persons {
+  display: block;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.amount {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #E23744;
+}
+
+.bulk-note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.bulk-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.bulk-btn:hover {
+  opacity: 0.9;
+}
   </style>
 </head>
 
@@ -190,6 +280,50 @@
     <p><em><i></i>(Matar Paneer + Dum Aloo + Rice + 4 Roti + Raita + Salad + Achar)</i></em></p>
   </section>
 
+  <section class="bulk-orders">
+  <h2>🎉 Bulk Party Orders</h2>
+
+  <p class="bulk-tagline">
+    Perfect for Family Functions, Birthday Parties, Office Lunches,
+    Kitty Parties & Special Occasions.
+  </p>
+
+  <div class="bulk-menu">
+    <strong>🍽️ Menu Includes:</strong><br>
+    Matar Paneer • Chole • Puri/Roti • Raita • Salad • Achar
+  </div>
+
+  <div class="bulk-pricing">
+
+    <div class="price-card">
+      <span class="persons">👨‍👩‍👧‍👦 10 Persons</span>
+      <span class="amount">₹4,250</span>
+    </div>
+
+    <div class="price-card">
+      <span class="persons">🎊 20 Persons</span>
+      <span class="amount">₹7,500</span>
+    </div>
+
+    <div class="price-card">
+      <span class="persons">🥳 30 Persons</span>
+      <span class="amount">₹9,500</span>
+    </div>
+
+  </div>
+
+  <a href="https://wa.me/918882140090?text=Hello%20Kishori%20Kitchen,%20I%20want%20to%20book%20a%20bulk%20order."
+     class="bulk-btn"
+     target="_blank">
+     📲 Book Bulk Order on WhatsApp
+  </a>
+
+  <p class="bulk-note">
+    Freshly prepared with premium ingredients and homestyle taste.
+    Advance booking recommended.
+  </p>
+</section>
+  
   <section>
     <h2>Rice</h2>
     <ul>
