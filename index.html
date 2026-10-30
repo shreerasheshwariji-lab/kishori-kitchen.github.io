@@ -585,7 +585,73 @@ document.getElementById("greeting").innerText =
 hour < 12 ? "☀️ Good Morning!" :
 hour < 18 ? "🌤️ Good Afternoon!" :
 "🌙 Good Evening!";
+
+
+
+
+// KISHORI SPICES PRODUCT SETTINGS
+// Replace 0 with your actual selling prices in INR.
+
+const spicePrices = {
+    "Haldi Powder": {
+        100: 0,
+        200: 0,
+        500: 0
+    },
+    "Mirch Powder": {
+        100: 0,
+        200: 0,
+        500: 0
+    },
+    "Dhaniya Powder": {
+        100: 0,
+        200: 0,
+        500: 0
+    },
+    "Jeera Whole Seeds": {
+        100: 0,
+        200: 0,
+        500: 0
+    }
+};
+
+document.querySelectorAll(".spice-card").forEach(card => {
+
+    const product = card.dataset.product;
+    const sizeSelect = card.querySelector(".spice-size");
+    const priceDisplay = card.querySelector(".spice-price");
+    const orderButton = card.querySelector(".spice-order");
+
+    function updateProductDetails() {
+
+        const size = sizeSelect.value;
+        const price = spicePrices[product][size];
+
+        if (price > 0) {
+            priceDisplay.textContent = "Price: ₹" + price;
+        } else {
+            priceDisplay.textContent = "Price: To be updated";
+        }
+
+        let message =
+            `Hello Kishori Spices! I want to order ${product}, ${size}g.`;
+
+        if (price > 0) {
+            message += ` Price: ₹${price}.`;
+        }
+
+        orderButton.href =
+            "https://wa.me/918882140090?text=" +
+            encodeURIComponent(message);
+    }
+
+    sizeSelect.addEventListener("change", updateProductDetails);
+
+    updateProductDetails();
+});
+
 </script>
+  
 
 </body>
 </html>
