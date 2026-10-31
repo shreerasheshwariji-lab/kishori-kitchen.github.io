@@ -1,16 +1,18 @@
-,<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="logo.png">
-  <title>Kishori Kitchen – Homestyle Happiness</title>
+
+  <title>Kishori Kitchen & Kishori Spices – Homestyle Happiness</title>
+
+  <meta name="description" content="Enjoy delicious vegetarian homestyle food and quality everyday spices from Kishori Kitchen and Kishori Spices, Govindpuram, Ghaziabad.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3DVXCJ98H"></script>
@@ -22,145 +24,10 @@
   </script>
 
   <style>
+    /* ==================================
+       GLOBAL STYLES
+    ================================== */
 
-    
-/* KISHORI SPICES SECTION */
-.spices-section {
-    margin: 35px 0;
-    padding: 25px 16px;
-    background: #fffaf0;
-    border-radius: 18px;
-    border: 1px solid #ead9b5;
-    color: #342515;
-}
-
-.spices-heading {
-    text-align: center;
-    font-size: 27px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #8b4513;
-}
-
-.spices-tagline {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #a0522d;
-    margin-bottom: 12px;
-}
-
-.spices-intro {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 22px;
-}
-
-.spice-trust {
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 22px;
-    color: #66513a;
-}
-
-.spice-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.spice-card {
-    background: #ffffff;
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid #eadfca;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.spice-card img {
-    width: 100%;
-    height: 155px;
-    object-fit: cover;
-    display: block;
-}
-
-.spice-info {
-    padding: 12px 10px 5px;
-}
-
-.spice-info h3 {
-    font-size: 17px;
-    margin: 0 0 6px;
-    color: #75420e;
-}
-
-.spice-info p {
-    font-size: 12px;
-    color: #76634e;
-    margin: 0 0 10px;
-}
-
-.spice-price {
-    font-size: 15px;
-    font-weight: 700;
-    color: #28743b;
-    margin: 8px 0;
-}
-
-.spice-size {
-    width: 85%;
-    padding: 9px;
-    border: 1px solid #d7c5a8;
-    border-radius: 7px;
-    background: #fffdf8;
-    font-size: 13px;
-    margin: 5px 0 10px;
-}
-
-.spice-order {
-    display: block;
-    width: 85%;
-    margin: auto;
-    padding: 10px 8px;
-    background: #218838;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.spice-order:hover {
-    background: #17692b;
-}
-
-.spice-note {
-    text-align: center;
-    font-size: 12px;
-    color: #76634e;
-    margin-top: 20px;
-    line-height: 1.6;
-}
-
-.spice-contact {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-@media (max-width: 350px) {
-    .spice-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-    
     * {
       box-sizing: border-box;
       margin: 0;
@@ -169,454 +36,678 @@
     }
 
     body {
-     text-align: center;
-     background:
+      text-align: center;
+      background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url('cover.jpeg') no-repeat center center fixed;
-        background-size: cover;
-        color: #fff;
-    }
-
-    .banner {
-      position: sticky;
-      top: 0;
-      background: #e23744;
-      color: #fff;
-      padding: 10px;
-      font-weight: 600;
-      z-index: 10;
+      background-size: cover;
+      color: #342515;
     }
 
     .container {
-      background: rgba(255,255,255,0.9);
-      margin: 16px;
-      padding: 24px;
-      border-radius: 18px;
+      max-width: 900px;
+      background: rgba(255,255,255,0.94);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
 
     #greeting {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
-      color: #d84315;
-      margin-bottom: 6px;
+      color: #8b4513;
+      margin-bottom: 10px;
     }
 
-    h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1b8f37;
-      font-size: 26px; }
+    /* ==================================
+       COMMON BRAND COLOURS
+    ================================== */
 
-    .tagline {
+    :root {
+      --cream: #fffaf0;
+      --brown: #8b4513;
+      --dark-brown: #342515;
+      --heading-brown: #75420e;
+      --tagline-brown: #a0522d;
+      --border-beige: #ead9b5;
+      --card-border: #eadfca;
+      --muted-brown: #76634e;
+      --green: #218838;
+      --green-dark: #17692b;
+    }
+
+    /* ==================================
+       KISHORI KITCHEN SECTION
+    ================================== */
+
+    .kitchen-section {
+      margin: 25px 0;
+      padding: 25px 16px;
+      background: var(--cream);
+      border-radius: 18px;
+      border: 1px solid var(--border-beige);
+      color: var(--dark-brown);
+    }
+
+    .kitchen-heading {
+      color: var(--brown);
+      font-size: 27px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .kitchen-tagline {
       font-size: 14px;
       font-weight: 600;
-      margin-bottom: 10px;
-      background: linear-gradient(90deg, #e65100, #ff8f00);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--tagline-brown);
+      margin-bottom: 15px;
     }
 
     .pure-veg {
-      color: #1b8f37;
+      color: var(--green);
       font-weight: 700;
-      margin-bottom: 12px;
+      font-size: 14px;
+      margin-bottom: 15px;
     }
 
-    .trust {
-      background: #03440F;
-      padding: 12px;
+    .kitchen-trust {
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      color: var(--heading-brown);
+      padding: 13px;
       border-radius: 12px;
       font-size: 13px;
-      margin-bottom: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 1.8;
     }
 
-    .offer {
-      background: #fff3e0;
-      padding: 14px;
+    .kitchen-offer {
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      padding: 15px;
       border-radius: 12px;
       margin-bottom: 18px;
-      font-size: 14px;
-      color: #e65100;
+      font-size: 13px;
+      line-height: 2;
+      color: var(--muted-brown);
     }
+
+    .kitchen-buttons {
+      max-width: 340px;
+      margin: auto;
+    }
+
+    /* ==================================
+       BUTTONS
+    ================================== */
 
     .btn {
       position: relative;
       display: block;
-      max-width: 320px;
-      margin: 14px auto;
-      padding: 15px;
-      border-radius: 14px;
-      color: #fff;
+      width: 100%;
+      margin: 13px auto;
+      padding: 14px 12px;
+      border-radius: 12px;
+      color: #ffffff;
       text-decoration: none;
       font-weight: 700;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      font-size: 14px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.10);
       transition: 0.2s;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .whatsapp { background: #25D366; }
-    .zomato { background: #e23744; }
-    .swiggy { background: #fc8019; }
-    .menu { background: #2e7d32; }
-    .feedback { background: #ff9800; }
-    .about {  background: #6a1b9a;}
-
-    /* 💓 Pulse without glow */
     .whatsapp {
-      animation: pulse 2s infinite;
-    }
+    background: #25D366;
+    animation: pulse 2s infinite;
+}
+
+.zomato {
+    background: #e23744;
+}
+
+.swiggy {
+    background: #fc8019;
+}
+
+.menu {
+    background: #2e7d32;
+}
+
+.feedback {
+    background: #ff9800;
+}
+
+.about {
+    background: #6a1b9a;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
 
     @keyframes pulse {
       0% { transform: scale(1); }
-      50% { transform: scale(1.04); }
+      50% { transform: scale(1.025); }
       100% { transform: scale(1); }
-    }
-
-    /* 🫧 Bubble effect */
-    .whatsapp::before,
-    .whatsapp::after {
-      content: "";
-      position: absolute;
-      width: 120%;
-      height: 120%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-    }
-
-    .whatsapp:active::before {
-      opacity: 1;
-      animation: bubbleTop 0.6s ease-out;
-    }
-
-    .whatsapp:active::after {
-      opacity: 1;
-      animation: bubbleBottom 0.6s ease-out;
-    }
-
-    @keyframes bubbleTop {
-      0% {
-        background-image:
-          radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%);
-        background-position: 50% 120%;
-        background-size: 12px 12px;
-      }
-      100% {
-        background-position: 50% -20%;
-        opacity: 0;
-      }
-    }
-
-    @keyframes bubbleBottom {
-      0% {
-        background-image:
-          radial-gradient(circle, rgba(255,255,255,0.7) 20%, transparent 20%);
-        background-position: 50% -20%;
-        background-size: 12px 12px;
-      }
-      100% {
-        background-position: 50% 120%;
-        opacity: 0;
-      }
-    }
-
-    .whatsapp:active {
-      transform: scale(0.95);
     }
 
     .badge {
       position: absolute;
       top: -8px;
-      right: -8px;
-      background: #ff5722;
-      color: #fff;
+      right: -7px;
+      background: #a0522d;
+      color: #ffffff;
       font-size: 10px;
       padding: 4px 8px;
       border-radius: 10px;
     }
 
-    .footer {
-      margin-top: 22px;
-      font-size: 13px;
-      color: #444;
-      padding-bottom: 90px;
+    /* ==================================
+       KISHORI SPICES SECTION
+    ================================== */
+
+    .spices-section {
+      margin: 25px 0;
+      padding: 25px 16px;
+      background: var(--cream);
+      border-radius: 18px;
+      border: 1px solid var(--border-beige);
+      color: var(--dark-brown);
     }
 
-    .sticky-btn {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #25D366;
-      color: #fff;
-      padding: 16px;
+    .spices-heading {
+      text-align: center;
+      font-size: 27px;
       font-weight: 800;
+      margin-bottom: 5px;
+      color: var(--brown);
+    }
+
+    .spices-tagline {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--tagline-brown);
+      margin-bottom: 12px;
+    }
+
+    .spices-intro {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--muted-brown);
+    }
+
+    .spice-trust {
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+      color: #66513a;
+      font-weight: 600;
+    }
+
+    .spice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .spice-card {
+      background: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .spice-card img {
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .spice-info {
+      padding: 12px 10px 5px;
+    }
+
+    .spice-info h3 {
+      font-size: 16px;
+      margin: 0 0 6px;
+      color: var(--heading-brown);
+    }
+
+    .spice-info p {
+      font-size: 12px;
+      color: var(--muted-brown);
+      margin: 0 0 10px;
+      min-height: 36px;
+    }
+
+    .spice-price {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--green);
+      margin: 10px 0;
+    }
+
+    .spice-pack {
+      display: inline-block;
+      background: #fffaf0;
+      border: 1px solid var(--border-beige);
+      color: var(--heading-brown);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .spice-order {
+      display: block;
+      width: 88%;
+      margin: auto;
+      padding: 10px 7px;
+      background: var(--green);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .spice-order:hover {
+      background: var(--green-dark);
+    }
+
+    .spice-note {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted-brown);
+      margin-top: 20px;
+      line-height: 1.7;
+    }
+
+    .spice-contact {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.9;
+      color: var(--heading-brown);
+    }
+
+    /* ==================================
+       FOOTER
+    ================================== */
+
+    .footer {
+      margin-top: 20px;
+      padding: 20px 10px 30px;
+      font-size: 12px;
+      line-height: 2;
+      color: var(--muted-brown);
+      background: var(--cream);
+      border: 1px solid var(--border-beige);
+      border-radius: 14px;
+    }
+
+    .footer a {
+      color: var(--brown);
+      font-weight: 700;
       text-decoration: none;
     }
+
+    /* ==================================
+       RESPONSIVE DESIGN
+    ================================== */
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 10px;
+        padding: 12px;
+      }
+
+      .kitchen-section,
+      .spices-section {
+        padding: 22px 12px;
+      }
+
+      .kitchen-heading,
+      .spices-heading {
+        font-size: 24px;
+      }
+
+      .spice-grid {
+        gap: 10px;
+      }
+
+      .spice-card img {
+        height: 125px;
+      }
+
+      .spice-info h3 {
+        font-size: 14px;
+      }
+
+      .spice-info p {
+        font-size: 11px;
+      }
+
+      .spice-order {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 330px) {
+      .spice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .spice-card img {
+        height: 180px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
-<!--<div class="banner"><marquee>
-🔥 ₹20 OFF on every ITEM on WhatsApp Order | Free Delivery on ₹299+ 🔥
-</marquee></div>-->
-  
 <div class="container">
 
-<!--<div id="greeting"></div>-->
+  <!-- GREETING -->
+  <div id="greeting"></div>
 
-<h1>🍲 KISHORI KITCHEN</h1>
+  <!-- ==================================
+       KISHORI KITCHEN START
+  ================================== -->
 
-<div class="tagline">
-Homestyle Happiness – Ghar Jaisa Swad in Every Bite
-</div>
+  <section class="kitchen-section" id="kishori-kitchen">
 
-<div class="pure-veg">🟢 100% Pure Veg Kitchen</div>
+    <h1 class="kitchen-heading">🍲 KISHORI KITCHEN</h1>
 
-<div class="trust">
-❤️ Loved by 500+ Customers<br>
-⭐ 4.0+ Ratings
-</div>
+    <div class="kitchen-tagline">
+      Homestyle Happiness – Ghar Jaisa Swad in Every Bite
+    </div>
 
-<div class="offer">
-✅ Freshly Cooked Daily<br>
-🏠 Home Style Food<br>
-🚫 No Preservatives
-</div>
+    <div class="pure-veg">
+      🟢 100% Pure Veg Kitchen
+    </div>
 
-<a href="https://wa.me/918882140090?text=Hello%20Kishori%20Kitchen,%20I%20would%20like%20to%20place%20an%20order."
-   class="btn whatsapp"
-   target="_blank"
-   onclick="trackOrder('WhatsApp')">
-   💬 Order on WhatsApp
-  <span class="badge">Best Deal</span>
-</a>
+    <div class="kitchen-trust">
+      ❤️ Loved by 500+ Customers<br>
+      ⭐ 4.0+ Ratings
+    </div>
 
-<a class="btn zomato" href="https://zomato.onelink.me/xqzv/vvjwucue" target="_blank">
-🍽️ Order on Zomato
-</a>
+    <div class="kitchen-offer">
+      ✅ Freshly Cooked Daily<br>
+      🏠 Home Style Food<br>
+      🚫 No Preservatives
+    </div>
 
-<a class="btn swiggy" href="https://www.swiggy.com/direct/brand/508011" target="_blank">
-🛵 Order on Swiggy
-</a>
+    <div class="kitchen-buttons">
 
-<a class="btn menu" href="https://kishorikitchen.in/menu/" target="_blank">
-📜 View Menu
-</a>
+      <a href="https://wa.me/918882140090?text=Hello%20Kishori%20Kitchen,%20I%20would%20like%20to%20place%20an%20order."
+         class="btn whatsapp"
+         target="_blank"
+         rel="noopener"
+         onclick="trackOrder('WhatsApp')">
+        💬 Order on WhatsApp
+        <span class="badge">Best Deal</span>
+      </a>
 
-<a class="btn about" href="about.html">
-👩‍🍳 About Us
-</a>
+      <a class="btn zomato"
+         href="https://zomato.onelink.me/xqzv/vvjwucue"
+         target="_blank"
+         rel="noopener">
+        🍽️ Order on Zomato
+      </a>
 
-<a class="btn feedback" href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform" target="_blank">
-⭐ Share Feedback
-</a>
+      <a class="btn swiggy"
+         href="https://www.swiggy.com/direct/brand/508011"
+         target="_blank"
+         rel="noopener">
+        🛵 Order on Swiggy
+      </a>
+
+      <a class="btn menu"
+         href="https://kishorikitchen.in/menu/"
+         target="_blank"
+         rel="noopener">
+        📜 View Menu
+      </a>
+
+      <a class="btn about" href="about.html">
+        👩‍🍳 About Us
+      </a>
+
+      <a class="btn feedback"
+         href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform"
+         target="_blank"
+         rel="noopener">
+        ⭐ Share Feedback
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- KISHORI KITCHEN END -->
 
 
+  <!-- ==================================
+       KISHORI SPICES START
+  ================================== -->
 
-<!-- KISHORI SPICES START -->
-
-<section class="spices-section" id="kishori-spices">
+  <section class="spices-section" id="kishori-spices">
 
     <h2 class="spices-heading">🌶️ Kishori Spices</h2>
 
     <div class="spices-tagline">
-        Freshly Ground | No Added Flavours
+      Freshly Ground | No Added Flavours
     </div>
 
     <p class="spices-intro">
-        Bring authentic flavours to your kitchen with
-        Kishori Spices. Explore our range of everyday
-        kitchen essentials.
+      Bring authentic flavours to your kitchen with
+      Kishori Spices. Explore our range of everyday
+      kitchen essentials.
     </p>
 
     <div class="spice-trust">
-        Quality • Freshness • Homestyle Taste
+      Quality • Freshness • Homestyle Taste
     </div>
 
     <div class="spice-grid">
 
-        <!-- HALDI -->
-        <div class="spice-card" data-product="Haldi Powder">
-            <img src="haldi.jpg"
-                 alt="Kishori Haldi Turmeric Powder"
-                 loading="lazy">
+      <!-- HALDI -->
+      <div class="spice-card" data-product="Haldi Powder">
 
-            <div class="spice-info">
-                <h3>Haldi Powder</h3>
-                <p>Golden colour and authentic flavour</p>
+        <img src="haldi.jpg"
+             alt="Kishori Haldi Turmeric Powder"
+             loading="lazy">
 
-                <div class="spice-price">Price: To be updated</div>
+        <div class="spice-info">
 
-                <select class="spice-size" aria-label="Select Haldi pack size">
-                    <option value="100">100g</option>
-                    
-                </select>
+          <h3>Haldi Powder</h3>
 
-                <a class="spice-order"
-                   href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Haldi%20Powder%20100g."
-                   target="_blank" rel="noopener">
-                    Order on WhatsApp
-                </a>
-            </div>
+          <p>Golden colour and authentic flavour</p>
+
+          <div class="spice-price">₹35</div>
+
+          <div class="spice-pack">100g Pack</div>
+
+          <a class="spice-order"
+             href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Haldi%20Powder%20100g%20for%20Rs.%2035."
+             target="_blank"
+             rel="noopener">
+            Order on WhatsApp
+          </a>
+
         </div>
+      </div>
 
-        <!-- MIRCH -->
-        <div class="spice-card" data-product="Mirch Powder">
-            <img src="mirch.jpg"
-                 alt="Kishori Red Chilli Powder"
-                 loading="lazy">
 
-            <div class="spice-info">
-                <h3>Mirch Powder</h3>
-                <p>Add colour and flavour to your food</p>
+      <!-- MIRCH -->
+      <div class="spice-card" data-product="Mirch Powder">
 
-                <div class="spice-price">Price: To be updated</div>
+        <img src="mirch.jpg"
+             alt="Kishori Red Chilli Powder"
+             loading="lazy">
 
-                <select class="spice-size" aria-label="Select Mirch pack size">
-                    <option value="100">100g</option>
-                    
-                </select>
+        <div class="spice-info">
 
-                <a class="spice-order"
-                   href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Mirch%20Powder%20100g."
-                   target="_blank" rel="noopener">
-                    Order on WhatsApp
-                </a>
-            </div>
+          <h3>Mirch Powder</h3>
+
+          <p>Add colour and flavour to your food</p>
+
+          <div class="spice-price">₹40</div>
+
+          <div class="spice-pack">100g Pack</div>
+
+          <a class="spice-order"
+             href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Mirch%20Powder%20100g%20for%20Rs.%2040."
+             target="_blank"
+             rel="noopener">
+            Order on WhatsApp
+          </a>
+
         </div>
+      </div>
 
-        <!-- DHANIYA -->
-        <div class="spice-card" data-product="Dhaniya Powder">
-            <img src="dhaniya.jpg"
-                 alt="Kishori Coriander Powder"
-                 loading="lazy">
 
-            <div class="spice-info">
-                <h3>Dhaniya Powder</h3>
-                <p>A classic flavour for everyday cooking</p>
+      <!-- DHANIYA -->
+      <div class="spice-card" data-product="Dhaniya Powder">
 
-                <div class="spice-price">Price: To be updated</div>
+        <img src="dhaniya.jpg"
+             alt="Kishori Coriander Powder"
+             loading="lazy">
 
-                <select class="spice-size" aria-label="Select Dhaniya pack size">
-                    <option value="100">100g</option>
-            
-                </select>
-                <a class="spice-order"
-                   href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Dhaniya%20Powder%20100g."
-                   target="_blank" rel="noopener">
-                    Order on WhatsApp
-                </a>
-            </div>
+        <div class="spice-info">
+
+          <h3>Dhaniya Powder</h3>
+
+          <p>A classic flavour for everyday cooking</p>
+
+          <div class="spice-price">₹35</div>
+
+          <div class="spice-pack">100g Pack</div>
+
+          <a class="spice-order"
+             href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Dhaniya%20Powder%20100g%20for%20Rs.%2035."
+             target="_blank"
+             rel="noopener">
+            Order on WhatsApp
+          </a>
+
         </div>
+      </div>
 
-        <!-- JEERA -->
-        <div class="spice-card" data-product="Jeera Whole Seeds">
-            <img src="jeera.jpg"
-                 alt="Kishori Whole Jeera Cumin Seeds"
-                 loading="lazy">
 
-            <div class="spice-info">
-                <h3>Jeera – Whole Seeds</h3>
-                <p>Aromatic cumin seeds for everyday dishes</p>
-                <div class="spice-price">Price: To be updated</div>
-                <select class="spice-size" aria-label="Select Jeera pack size">
-                    <option value="100">100g</option>
-                </select>
+      <!-- WHOLE JEERA -->
+      <div class="spice-card" data-product="Jeera Whole Seeds">
 
-                <a class="spice-order"
-                   href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Jeera%20Whole%20Seeds%20100g."
-                   target="_blank" rel="noopener">
-                    Order on WhatsApp
-                </a>
-            </div>
+        <img src="jeera.jpg"
+             alt="Kishori Whole Jeera Cumin Seeds"
+             loading="lazy">
+
+        <div class="spice-info">
+
+          <h3>Jeera – Whole Seeds</h3>
+
+          <p>Aromatic cumin seeds for everyday dishes</p>
+
+          <div class="spice-price">₹60</div>
+
+          <div class="spice-pack">100g Pack</div>
+
+          <a class="spice-order"
+             href="https://wa.me/918882140090?text=Hello%2C%20I%20want%20to%20order%20Jeera%20Whole%20Seeds%20100g%20for%20Rs.%2060."
+             target="_blank"
+             rel="noopener">
+            Order on WhatsApp
+          </a>
+
         </div>
+      </div>
+
     </div>
-</section>
 
-<!-- KISHORI SPICES END -->
+    
+  </section>
 
-<div class="footer">
-🙏 <b>Thank You for Your Order</b><br>
-📍 <b>Proudly Serving:</b> Keshav Kunj, Govindpuram Ghaziabad<br>
-🕒 <b>Serving Time:</b> 11:00 AM – 11:00 PM<br>
-🔗 <b>Visit Us:</b> <a href="https://kishorikitchen.in" target="_blank">kishorikitchen.in</a></p>
-<!--📞 <b>Contact:</b> 08882140090<br>-->
-🧾 <b>FSSAI Lic. No:</b> 22726699000027
+  <!-- KISHORI SPICES END -->
+
+
+  <!-- ==================================
+       FOOTER
+  ================================== -->
+
+  <div class="footer">
+
+    🙏 <b>Thank You for Your Order</b><br>
+
+    
+    🕒 <b>Serving Time (Food):</b>
+    11:00 AM – 11:00 PM<br>
+
+    🕒 <b>Serving Time (Masale):</b>
+    Orders Accepted 24 hours <br>
+
+    🔗 <b>Visit Us:</b>
+    <a href="https://kishorikitchen.in"
+       target="_blank"
+       rel="noopener">
+      kishorikitchen.in
+    </a><br>
+
+    📞 <b>Contact:</b> 08882140090<br>
+
+    🧾 <b>FSSAI Lic. No:</b> 22726699000027
+
+  </div>
+
 </div>
 
-</div>
+
+<!-- ==================================
+     JAVASCRIPT
+================================== -->
 
 <script>
-const hour = new Date().getHours();
-document.getElementById("greeting").innerText =
-hour < 12 ? "☀️ Good Morning!" :
-hour < 18 ? "🌤️ Good Afternoon!" :
-"🌙 Good Evening!";
+
+  // GREETING
+  const greeting = document.getElementById("greeting");
+
+  if (greeting) {
+    const hour = new Date().getHours();
+
+    greeting.innerText =
+      hour < 12 ? "☀️ Good Morning!" :
+      hour < 18 ? "🌤️ Good Afternoon!" :
+      "🌙 Good Evening!";
+  }
 
 
-
-
-// KISHORI SPICES PRODUCT SETTINGS
-// Replace 0 with your actual selling prices in INR.
-
-const spicePrices = {
-    "Haldi Powder": {
-        100: 0
-    },
-    "Mirch Powder": {
-        100: 0
-    },
-    "Dhaniya Powder": {
-        100: 0
-    },
-    "Jeera Whole Seeds": {
-        100: 0
+  // GOOGLE ANALYTICS ORDER TRACKING
+  function trackOrder(platform) {
+    if (typeof gtag === "function") {
+      gtag('event', 'order_click', {
+        event_category: 'Orders',
+        event_label: platform
+      });
     }
-};
-
-document.querySelectorAll(".spice-card").forEach(card => {
-
-    const product = card.dataset.product;
-    const sizeSelect = card.querySelector(".spice-size");
-    const priceDisplay = card.querySelector(".spice-price");
-    const orderButton = card.querySelector(".spice-order");
-
-    function updateProductDetails() {
-
-        const size = sizeSelect.value;
-        const price = spicePrices[product][size];
-
-        if (price > 0) {
-            priceDisplay.textContent = "Price: ₹" + price;
-        } else {
-            priceDisplay.textContent = "Price: To be updated";
-        }
-
-        let message =
-            `Hello Kishori Spices! I want to order ${product}, ${size}g.`;
-
-        if (price > 0) {
-            message += ` Price: ₹${price}.`;
-        }
-
-        orderButton.href =
-            "https://wa.me/918882140090?text=" +
-            encodeURIComponent(message);
-    }
-
-    sizeSelect.addEventListener("change", updateProductDetails);
-
-    updateProductDetails();
-});
+  }
 
 </script>
-  
 
 </body>
 </html>
