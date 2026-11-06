@@ -1,1 +1,548 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kishori Kitchen & Kishori Spices – Homestyle Happiness</title>
+
+  <meta name="description" content="Enjoy delicious vegetarian homestyle food from Kishori Kitchen. Kishori Spices, our upcoming range of everyday spices, is launching soon in Ghaziabad.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3DVXCJ98H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E3DVXCJ98H');
+  </script>
+
+  <style>
+
+    /* GLOBAL STYLES */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --cream: #fffaf0;
+      --brown: #8b4513;
+      --dark-brown: #342515;
+      --heading-brown: #75420e;
+      --tagline-brown: #a0522d;
+      --border-beige: #ead9b5;
+      --green: #218838;
+      --green-dark: #17692b;
+      --muted-brown: #76634e;
+    }
+
+    body {
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('cover.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--dark-brown);
+    }
+
+    .container {
+      max-width: 900px;
+      background: rgba(255,255,255,0.94);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    #greeting {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brown);
+      margin-bottom: 10px;
+    }
+
+    /* KISHORI KITCHEN */
+
+    .kitchen-section {
+      margin: 25px 0;
+      padding: 25px 16px;
+      background: var(--cream);
+      border-radius: 18px;
+      border: 1px solid var(--border-beige);
+      color: var(--dark-brown);
+    }
+
+    .kitchen-heading {
+      color: var(--brown);
+      font-size: 27px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .kitchen-tagline {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--tagline-brown);
+      margin-bottom: 15px;
+    }
+
+    .pure-veg {
+      color: var(--green);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .kitchen-trust,
+    .kitchen-offer {
+      background: #fffaf0;
+      border: 1px solid var(--heading-brown);
+      padding: 13px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .kitchen-trust {
+      color: var(--heading-brown);
+      font-weight: 600;
+    }
+
+    .kitchen-offer {
+      padding: 15px;
+      margin-bottom: 18px;
+      color: var(--muted-brown);
+    }
+
+    .kitchen-buttons {
+      max-width: 340px;
+      margin: auto;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 13px auto;
+      padding: 14px 12px;
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.10);
+      transition: 0.2s;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      animation: pulse 2s infinite;
+    }
+
+    .zomato {
+      background: #e23744;
+    }
+
+    .swiggy {
+      background: #fc8019;
+    }
+
+    .menu {
+      background: #2e7d32;
+    }
+
+    .feedback {
+      background: #ff9800;
+    }
+
+    .about {
+      background: #6a1b9a;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.025); }
+      100% { transform: scale(1); }
+    }
+
+    .badge {
+      position: absolute;
+      top: -8px;
+      right: -7px;
+      background: #a0522d;
+      color: #fff;
+      font-size: 10px;
+      padding: 4px 8px;
+      border-radius: 10px;
+    }
+
+    /* KISHORI SPICES COMING SOON */
+
+    .spices-teaser {
+      position: relative;
+      overflow: hidden;
+      margin: 25px 0;
+      padding: 35px 20px;
+      background:
+        linear-gradient(
+          135deg,
+          #fffaf0 0%,
+          #f5e6c8 55%,
+          #ead5a8 100%
+        );
+      border: 2px solid #b47a32;
+      border-radius: 18px;
+      color: var(--dark-brown);
+      box-shadow: 0 5px 18px rgba(90,50,10,0.10);
+    }
+
+    .coming-soon-label {
+      display: inline-block;
+      background: #8b4513;
+      color: #fff;
+      padding: 7px 18px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .spices-heading {
+      font-size: 29px;
+      font-weight: 800;
+      color: #75420e;
+      margin-bottom: 7px;
+    }
+
+    .spices-tagline {
+      font-size: 14px;
+      font-weight: 700;
+      color: #a0522d;
+      margin-bottom: 18px;
+    }
+
+    .spices-teaser p {
+      max-width: 620px;
+      margin: 0 auto 15px;
+      font-size: 13px;
+      line-height: 1.9;
+      color: #66513a;
+    }
+
+    .spices-teaser .spice-quality {
+      font-weight: 700;
+      color: #75420e;
+      margin-top: 12px;
+    }
+
+    .spices-teaser-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 13px 22px;
+      background: #218838;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+      transition: 0.2s;
+    }
+
+    .spices-teaser-link:hover {
+      background: #17692b;
+      transform: translateY(-2px);
+    }
+
+    .spices-note {
+      font-size: 11px !important;
+      margin-top: 15px !important;
+      color: #76634e !important;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      margin-top: 20px;
+      padding: 20px 10px 30px;
+      font-size: 12px;
+      line-height: 2;
+      color: var(--muted-brown);
+      background: var(--cream);
+      border: 1px solid var(--border-beige);
+      border-radius: 14px;
+    }
+
+    .footer a {
+      color: var(--brown);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* MOBILE RESPONSIVE DESIGN */
+
+    @media (max-width: 480px) {
+
+      .container {
+        margin: 10px;
+        padding: 12px;
+      }
+
+      .kitchen-section,
+      .spices-teaser {
+        padding: 22px 12px;
+      }
+
+      .kitchen-heading,
+      .spices-heading {
+        font-size: 24px;
+      }
+
+      .spices-teaser p {
+        font-size: 12px;
+      }
+
+      .spices-teaser-link {
+        display: block;
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- GREETING -->
+
+  <div id="greeting"></div>
+
+  <!-- KISHORI KITCHEN SECTION -->
+
+  <section class="kitchen-section" id="kishori-kitchen">
+
+    <h1 class="kitchen-heading">
+      🍲 KISHORI KITCHEN
+    </h1>
+
+    <div class="kitchen-tagline">
+      Homestyle Happiness – Ghar Jaisa Swad in Every Bite
+    </div>
+
+    <div class="pure-veg">
+      🟢 100% Pure Veg Kitchen
+    </div>
+
+    <div class="kitchen-trust">
+      ❤️ Loved by 500+ Customers<br>
+      ⭐ 4.0+ Ratings
+    </div>
+
+    <div class="kitchen-offer">
+      ✅ Freshly Cooked Daily<br>
+      🏠 Home Style Food<br>
+      🚫 No Preservatives
+    </div>
+
+    <div class="kitchen-buttons">
+
+      <a href="https://wa.me/918882140090?text=Hello%20Kishori%20Kitchen,%20I%20would%20like%20to%20place%20an%20order."
+         class="btn whatsapp"
+         target="_blank"
+         rel="noopener"
+         onclick="trackOrder('WhatsApp')">
+
+        💬 Order on WhatsApp
+        <span class="badge">Best Deal</span>
+
+      </a>
+
+      <a class="btn zomato"
+         href="https://zomato.onelink.me/xqzv/vvjwucue"
+         target="_blank"
+         rel="noopener">
+
+        🍽️ Order on Zomato
+
+      </a>
+
+      <a class="btn swiggy"
+         href="https://www.swiggy.com/direct/brand/508011"
+         target="_blank"
+         rel="noopener">
+
+        🛵 Order on Swiggy
+
+      </a>
+
+      <a class="btn menu"
+         href="https://kishorikitchen.in/menu/"
+         target="_blank"
+         rel="noopener">
+
+        📜 View Menu
+
+      </a>
+
+      <a class="btn about" href="about.html">
+
+        👩‍🍳 About Us
+
+      </a>
+
+      <a class="btn feedback"
+         href="https://docs.google.com/forms/d/1zr7lL_48HMY2oQniCsVDMJgsnA_Hu2y2iUeGcyNDWus/viewform"
+         target="_blank"
+         rel="noopener">
+
+        ⭐ Share Feedback
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- KISHORI KITCHEN END -->
+
+
+  <!-- KISHORI SPICES COMING SOON SECTION -->
+
+  <section class="spices-teaser" id="kishori-spices">
+
+    <div class="coming-soon-label">
+      🌿 COMING SOON
+    </div>
+
+    <h2 class="spices-heading">
+      🌶️ KISHORI SPICES
+    </h2>
+
+    <div class="spices-tagline">
+      Freshly Ground | No Added Flavours
+    </div>
+
+    <p>
+      A new flavour is coming to your kitchen!
+      We are getting ready to bring you the everyday
+      spices you love, with the freshness and
+      homestyle goodness you expect from Kishori.
+    </p>
+
+    <p class="spice-quality">
+      Quality • Freshness • Homestyle Taste
+    </p>
+
+    <a class="spices-teaser-link"
+       href="https://wa.me/918882140090?text=Hello%20Kishori%20Spices%2C%20please%20let%20me%20know%20when%20your%20spices%20are%20available."
+       target="_blank"
+       rel="noopener"
+       onclick="trackOrder('Kishori Spices Coming Soon')">
+
+      🌿 Notify Me When Available
+
+    </a>
+
+    <p class="spices-note">
+      Follow us and be among the first to experience
+      the authentic taste of Kishori Spices!
+    </p>
+
+  </section>
+
+  <!-- KISHORI SPICES END -->
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+
+    🙏 <b>Thank You for Your Order</b><br>
+
+    🕒 <b>Serving Time (Food):</b>
+    11:00 AM – 11:00 PM<br>
+
+    🔗 <b>Visit Us:</b>
+
+    <a href="https://kishorikitchen.in"
+       target="_blank"
+       rel="noopener">
+
+      kishorikitchen.in
+
+    </a>
+
+    <br>
+
+    📞 <b>Contact:</b> 08882140090<br>
+
+    🧾 <b>FSSAI Lic. No:</b> 22726699000027
+
+  </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+  // GREETING
+
+  const greeting = document.getElementById("greeting");
+
+  if (greeting) {
+
+    const hour = new Date().getHours();
+
+    greeting.innerText =
+      hour < 12 ? "☀️ Good Morning!" :
+      hour < 16 ? "🌤️ Good Afternoon!" :
+      "🌙 Good Evening!";
+
+  }
+
+
+  // GOOGLE ANALYTICS TRACKING
+
+  function trackOrder(platform) {
+
+    if (typeof gtag === "function") {
+
+      gtag('event', 'order_click', {
+
+        event_category: 'Orders',
+        event_label: platform
+
+      });
+
+    }
+
+  }
+
+</script>
+
+</body>
+</html>
